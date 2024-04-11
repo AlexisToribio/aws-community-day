@@ -18,3 +18,9 @@ There is a cli-deployment.example.json template where you must define the config
 ```
 aws greengrassv2 create-deployment --cli-input-json file://cli-deployment.json
 ```
+
+It's important to define the following configuration:
+
+- targetArtn: ARN thing group
+- deploymentName: Name for deployment
+- components: Set of component to deploy
